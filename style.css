@@ -11,6 +11,7 @@ h1{
     font-family: "Sacramento", cursive;
     text-align: center;
     margin-bottom: 0;
+    margin-top: 10%;
     padding: 0;
     color:  #134B70;
 }
@@ -62,16 +63,16 @@ p{
     background-position: center;
     opacity: 0.7;
 }
-.title-text, .middle{
-    top: 20%;
+.middle{
+    top: 30%;
     left: 35%;
-    transform: translate(-20% -35%);
+    transform: translate(-30% -35%);
     text-align: center;
 }
 
 /* Introduction and Resume styling */
 .introduction{
-    width: 400px;
+    width: 300px;
     height: 100px;
 }
 .dot{
@@ -87,6 +88,10 @@ p{
     margin: 50px;
     margin-bottom: 0;
 }
+.pro{
+    margin: 0;
+}
+
 
 /* Button styling */
 .email, .call, .Cv{
@@ -133,12 +138,13 @@ p{
 .image{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 70vh;
-    margin-top: 6px;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
 }
 .image p{
     text-align: center;
-    padding: 7%;
+    padding: 5%;
     padding-top: 2%;
 }
 
@@ -164,10 +170,25 @@ p{
 
 /*For phone and tablet screen*/
 @media(max-width: 760px){
+    h1{
+        font-size: 3.6rem;
+        margin-top: 30%;
+    }
+    .title-text h2{
+        font-size: 2rem;
+    }
     .image{
         grid-template-columns: 1fr;
         background-color: rgb(230, 233, 248);
-        height: 190vh;
+        height: 140vh;
         margin-top: 0;
+    }
+    .contact-text h3{
+        font-size: 21px;
+    }
+    .getintouch button{
+        font-size: 11px;
+        width: 80px;
+        height: 30px;
     }
 }
